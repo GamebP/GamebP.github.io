@@ -1,7 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Work+Sans&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Mulish&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Hind&display=swap');
 
-.in
+
+body
 {
     /* border: 2px solid #474e5a8f; */
     padding: 10px;
@@ -14,9 +16,20 @@ h1
     font-family: 'Mulish', sans-serif;
 }
 
-p.text_generator_fim, #char, p
+p.text_generator_fim, #char, p, label, textarea, span
 {
     font-family: 'Work Sans', sans-serif;
     font-size: 20px;
 }
 
+button {
+    background-color: white;
+    color: black;
+    border: 2px solid #4CAF50;
+    padding: 8px 16px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 20px;
+    font-family: 'Hind', sans-serif;
+  }
