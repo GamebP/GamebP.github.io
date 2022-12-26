@@ -1,25 +1,83 @@
-const charListCharacters = "ㄖ几ㄥㄚ山ㄒ卂Ҝ乇丂ツㅤ卐ㅰㅱصഐᾯ";
+//
+//
+//
+// Characters only !
+//
+//
+//
 
-function CharactersOnly(length) {
-    let result = "";
-    for (let i = 0; i < length; i++) {
-      result += charListCharacters[Math.floor(Math.random() * charListCharacters.length)];
-    }
-    return result;
+// Get the length input field
+var lengthField = document.getElementById("length_characters");
+// Get the length value element
+var lengthValue = document.getElementById("length-value_characters");
+// Get the button elements
+var generateButton = document.getElementById("button_characters");
+var copyButton = document.getElementById("copy-button_characters");
+// Get the textarea and output elements
+var textarea = document.getElementById("textarea_haracters");
+var output = document.getElementById("output_characters");
+
+// Define a constant or a variable with a string value containing the characters
+const characters = "ㄖ几ㄥㄚ山ㄒ卂Ҝ乇丂ツㅤ卐ㅰㅱصഐᾯ";
+// var characters = "abcdefghijklmnopqrstuvwxyz";
+
+// Function to generate a random string of characters
+function generateRandomString(characters, length) {
+  var result = "";
+  for (var i = 0; i < length; i++) {
+    result += characters.charAt(Math.floor(Math.random() * characters.length));
+  }
+  return result;
 }
 
-function Generate_GenerateCharactersOnly() {
-    //document.getElementById("char").textContent = CharactersOnly(16);
-    document.getElementById("char").innerHTML = CharactersOnly(16);
-  }
+// Update the length value element when the range input field is changed
+lengthField.addEventListener("input", function() {
+  lengthValue.innerHTML = lengthField.value;
+});
 
-  function Copy_CharactersOnly() {
-    const headingText = document.getElementById("char").textContent;
+// Generate a random string of characters and update the output and textarea elements when the button is clicked
+generateButton.addEventListener("click", function() {
+  // Get the length from the input field
+  var length = lengthField.value;
+  // Generate a random string of characters
+  var randomString = generateRandomString(characters, length);
+  // Update the output and textarea elements with the generated string
+  output.innerHTML = randomString;
+  textarea.value = randomString;
+  // Enable the copy button
+  copyButton.disabled = false;
+});
+
+// Copy the generated string to the clipboard when the button is clicked
+copyButton.addEventListener("click", function() {
+  // Select the textarea element
+  textarea.select();
+  // Copy the selected text to the clipboard
+  document.execCommand("copy");
+});
+
+function CopyCharacters() {
+  // Get the text from the output element
+  const text = document.getElementById("output_characters").textContent;
   
-    const tempInput = document.createElement("input");
-    tempInput.value = headingText;
-    document.body.appendChild(tempInput);
-    tempInput.select();
-    document.execCommand("copy");
-    document.body.removeChild(tempInput);
+  // Create a temporary input element
+  const tempInput = document.createElement("input");
+  // Set the value of the input element to the text from the output element
+  tempInput.value = text;
+  // Append the input element to the body
+  document.body.appendChild(tempInput);
+  // Select the text in the input element
+  tempInput.select();
+  // Copy the selected text to the clipboard
+  document.execCommand("copy");
+  // Remove the input element from the body
+  document.body.removeChild(tempInput);
   }
+  
+//
+//
+//
+// 
+//
+//
+//
