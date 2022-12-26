@@ -14,17 +14,18 @@
     <script src="EverythingInOne.js"></script>
 </head>
 <body>
-    <div class="in">
-        <br>
-        <h1>Characters Only!</h1>
-        <p class="text_generator_fim" id="char">hello</p>
-        <br>
-        <button onclick="Generate_GenerateCharactersOnly()">Generate Characters</button>
-        <button onclick="Copy_CharactersOnly()">Copy Text</button>  
-        <br>
-    </div>
+    <br>
+    <h1>Only Characters With Numbers!</h1>
+    <label for="length_charactersnum">Length:</label>
+    <input type="range" id="length_charactersnum" min="1" max="32" value="16">
+    <span id="length-value_charactersnum"></span>
+    </form>
+    <button id="button_charactersnum">Generate</button>
+    <button id="copy-button_charactersnum" disabled onclick="CopyCharactersnum()">Copy</button>
+    <textarea id="textarea_haractersnum" style="display: none;"></textarea>
+    <p id="output_charactersnum"></p>
+    <br>
     <hr>
-    <div class="in">
         <br>
         <h1>Characters With Numbers Only!</h1>
         <p class="text_generator_fim" id="sudsdisZads">hello</p>
@@ -32,9 +33,7 @@
         <button onclick="gasasas_Asas()">Generate Characters</button>
         <button onclick="Copy_GenerateCharactersWithNumbersOnlyADS()">Copy Text</button>  
         <br>
-    </div>
     <hr>
-    <div class="in">
         <br>
         <h1>Characters With Numbers And Capital Letters Only!</h1>
         <p class="text_generator_fim" id="charAs">hello</p>
@@ -42,9 +41,7 @@
         <button onclick="Generate_CharactersWithNumbersAndLettersOnly()">Generate Characters</button>
         <button onclick="Copy_GenerateCharactersWithNumbersOnlyOMG()">Copy Text</button>  
         <br>
-    </div>
     <hr>
-    <div class="in">
         <br>
         <h1>Characters With Numbers And Non-Capital Letters Only!</h1>
         <p class="text_generator_fim" id="CharOnHere">hello</p>
@@ -52,9 +49,7 @@
         <button onclick="Generate_bititmatos()">Generate Characters</button>
         <button onclick="Copy_bititmatos()">Copy Text</button>  
         <br>
-    </div>
     <hr>
-    <div class="in">
         <br>
         <h1>Everything In One!</h1>
         <p class="text_generator_fim" id="charev">hello</p>
@@ -62,6 +57,5 @@
         <button onclick="Generate_EverythingInOne()">Generate Characters</button>
         <button onclick="Copy_Everything()">Copy Text</button>  
         <br>
-    </div>
 </body>
 </html>
