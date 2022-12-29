@@ -2,8 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <!-- 😃😃. Don't leak my website you fat black monkey nigger!! -->
-    <meta name="description" content="For nigger monkeys who can't create accounts!!">
+    <meta name="description" content="For nigger monkeys who can't create accounts!! 😃😃 Don't leak my website you fat black monkey nigger!!">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Name Generator | SkyDash</title>
@@ -26,11 +25,11 @@ function ChineseChar(length) {
 }
 
 function GenerateChineseChar() {
-    document.getElementById("chinesechar").innerHTML = ChineseChar(16);
+    document.getElementById("chinesechartext").innerHTML = ChineseChar(16);
   }
 
   function CopyChineseChar() {
-    const headingText = document.getElementById("chinesechar").textContent;
+    const headingText = document.getElementById("chinesechartext").textContent;
     const tempInput = document.createElement("input");
     tempInput.value = headingText;
     document.body.appendChild(tempInput);
@@ -98,7 +97,7 @@ function GenerateChineseChar() {
     <hr>
         <br><br>
         <h1>Chinese Characters Only</h1>
-        <p class="text_generator_fim" id="chinesechar">hello</p>
+        <p class="text_generator_fim" id="chinesechartext">hello</p>
         <br><br>
         <button onclick="GenerateChineseChar()">Generate Chinese Characters</button>
         <button onclick="CopyChineseChar()">Copy Chinese Characters</button>
