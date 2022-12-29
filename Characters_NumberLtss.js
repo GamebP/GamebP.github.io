@@ -1,4 +1,4 @@
-const butits = "abcdefghijklmnopqrstuvwxyz1234567890ㄖ几ㄥㄚ山ㄒ卂Ҝ乇丂ツㅤ卐ㅰㅱصഐᾯ";
+const butits = "abcdefghijklmnopqrstuvwxyz1234567890ㄖ几ㄥㄚ山ㄒ卂Ҝ乇丂ツㅤ卐ㅰㅱصഐᾯண";
 function bititmatos(length) {
     let result = "";
     for (let i = 0; i < length; i++) {
