@@ -18,7 +18,7 @@ var textarea = document.getElementById("textarea_haracters");
 var output = document.getElementById("output_characters");
 
 // Define a constant or a variable with a string value containing the characters
-const characters = "ㄖ几ㄥㄚ山ㄒ卂Ҝ乇丂ツㅤ卐ㅰㅱصഐᾯ";
+const characters = "ㄖ几ㄥㄚ山ㄒ卂Ҝ乇丂ツㅤ卐ㅰㅱصഐᾯண";
 // var characters = "abcdefghijklmnopqrstuvwxyz";
 
 // Function to generate a random string of characters
