@@ -1,4 +1,4 @@
-const charListCharactersWithNumbersAndLetters = "ABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890ㄖ几ㄥㄚ山ㄒ卂Ҝ乇丂ツㅤ卐ㅰㅱصഐᾯ";
+const charListCharactersWithNumbersAndLetters = "ABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890ㄖ几ㄥㄚ山ㄒ卂Ҝ乇丂ツㅤ卐ㅰㅱصഐᾯண";
 
 function CharactersWithNumbersAndLettersOnly(length) {
     let result = "";
