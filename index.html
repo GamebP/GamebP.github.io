@@ -41,8 +41,7 @@ function GenerateChineseChar() {
         
     </script>
     <script>
-        const ChineseCharNormalChar = "ソナルウチざあぽヌぞズどラゾ㍿マモコんベぁ゜アゥくひポぼヲイヹよギぷムまがレぱパヽヺつゔゑゟロぴェサなプぬグクばめ㍐セいデタホトカノハピミじォゅリみニずヂヿせケごぇぶボりヱヰふスヾゖヤネさヘれてゞ゛をへそぐしゝゕュユャぎョすビやフヸかむエシだっはちえょにザヨけたのダバンゆゼゴねテるゲペづメドィわブヶぺらゐヒワとッぅァヅきでジツヮぜほヴびキげー・ぃろガお゠オヷうこぉもゎべヵゃ" +
-                                      "ㄖ几ㄥㄚ山ㄒ卂Ҝ乇丂ツㅤ卐ㅰㅱصഐᾯண";
+        const ChineseCharNormalChar = "ソナルウチざあぽヌぞズどラゾ㍿マモコんベぁ゜アゥくひポぼヲイヹよギぷムまがレぱパヽヺつゔゑゟロぴェサなプぬグクばめ㍐セいデタホトカノハピミじォゅリみニずヂヿせケごぇぶボりヱヰふスヾゖヤネさヘれてゞ゛をへそぐしゝゕュユャぎョすビやフヸかむエシだっはちえょにザヨけたのダバンゆゼゴねテるゲペづメドィわブヶぺらゐヒワとッぅァヅきでジツヮぜほヴびキげー・ぃろガお゠オヷうこぉもゎべヵゃ" + "ㄖ几ㄥㄚ山ㄒ卂Ҝ乇丂ツㅤ卐ㅰㅱصഐᾯண";
 
 function ChineseCharNormalCharGetChar(length) {
     let result = "";
@@ -58,6 +57,33 @@ function GenerateChineseCharNormalChar() {
 
   function CopyChineseCharNormalChar() {
     const headingText = document.getElementById("chinesecharnormalchartext").textContent;
+    const tempInput = document.createElement("input");
+    tempInput.value = headingText;
+    document.body.appendChild(tempInput);
+    tempInput.select();
+    document.execCommand("copy");
+    document.body.removeChild(tempInput);
+  }
+    </script>
+    <script>
+    const ChineseCharNumberChar = "ソナルウチざあぽヌぞズどラゾ㍿マモコんベぁ゜アゥくひポぼヲイヹよギぷムまがレぱパヽヺつゔゑゟロぴェサなプぬグクばめ㍐セいデタホトカノハピミじォゅリみニずヂヿせケごぇぶボりヱヰふスヾゖヤネさヘれてゞ゛をへそぐしゝゕュユャぎョすビやフヸかむエシだっはちえょにザヨけたのダバンゆゼゴねテるゲペづメドィわブヶぺらゐヒワとッぅァヅきでジツヮぜほヴびキげー・ぃろガお゠オヷうこぉもゎべヵゃ" 
+    + "一二三四五六七八九十" // 1 2 3 4 5 6 7 8 9 10  
+    + "1234567890"; 
+
+function ChineseCharNumberCharGetChar(length) {
+    let result = "";
+    for (let i = 0; i < length; i++) {
+      result += ChineseCharNumberChar[Math.floor(Math.random() * ChineseCharNumberChar.length)];
+    }
+    return result;
+}
+
+function GenerateChineseChar() {
+    document.getElementById("chinesechartext").innerHTML = ChineseCharGetChar(16);
+  }
+
+  function CopyChineseChar() {
+    const headingText = document.getElementById("chinesechartext").textContent;
     const tempInput = document.createElement("input");
     tempInput.value = headingText;
     document.body.appendChild(tempInput);
