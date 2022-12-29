@@ -1,4 +1,4 @@
-const CharNumbs = "1234567890ㄖ几ㄥㄚ山ㄒ卂Ҝ乇丂ツㅤ卐ㅰㅱصഐᾯ";
+const CharNumbs = "1234567890ㄖ几ㄥㄚ山ㄒ卂Ҝ乇丂ツㅤ卐ㅰㅱصഐᾯண";
 
 function CharactersWithNumbersOnly(length) {
     let result = "";
