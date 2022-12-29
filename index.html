@@ -16,7 +16,7 @@
     <script>
         const ChineseChar = "ソナルウチざあぽヌぞズどラゾ㍿マモコんベぁ゜アゥくひポぼヲイヹよギぷムまがレぱパヽヺつゔゑゟロぴェサなプぬグクばめ㍐セいデタホトカノハピミじォゅリみニずヂヿせケごぇぶボりヱヰふスヾゖヤネさヘれてゞ゛をへそぐしゝゕュユャぎョすビやフヸかむエシだっはちえょにザヨけたのダバンゆゼゴねテるゲペづメドィわブヶぺらゐヒワとッぅァヅきでジツヮぜほヴびキげー・ぃろガお゠オヷうこぉもゎべヵゃ";
 
-function ChineseChar(length) {
+function ChineseCharGetChar(length) {
     let result = "";
     for (let i = 0; i < length; i++) {
       result += ChineseChar[Math.floor(Math.random() * ChineseChar.length)];
@@ -25,7 +25,7 @@ function ChineseChar(length) {
 }
 
 function GenerateChineseChar() {
-    document.getElementById("chinesechartext").innerHTML = ChineseChar(16);
+    document.getElementById("chinesechartext").innerHTML = ChineseCharGetChar(16);
   }
 
   function CopyChineseChar() {
