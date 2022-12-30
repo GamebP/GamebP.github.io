@@ -148,24 +148,24 @@ function GenerateChineseCharNormalChar() {
   }
     </script>
     <script>
-    const ChineseCharNumberChar = "ソナルウチざあぽヌぞズどラゾ㍿マモコんベぁ゜アゥくひポぼヲイヹよギぷムまがレぱパヽヺつゔゑゟロぴェサなプぬグクばめ㍐セいデタホトカノハピミじォゅリみニずヂヿせケごぇぶボりヱヰふスヾゖヤネさヘれてゞ゛をへそぐしゝゕュユャぎョすビやフヸかむエシだっはちえょにザヨけたのダバンゆゼゴねテるゲペづメドィわブヶぺらゐヒワとッぅァヅきでジツヮぜほヴびキげー・ぃろガお゠オヷうこぉもゎべヵゃ" 
+    const ChineseCharChineseNumberAndNumberChar = "ソナルウチざあぽヌぞズどラゾ㍿マモコんベぁ゜アゥくひポぼヲイヹよギぷムまがレぱパヽヺつゔゑゟロぴェサなプぬグクばめ㍐セいデタホトカノハピミじォゅリみニずヂヿせケごぇぶボりヱヰふスヾゖヤネさヘれてゞ゛をへそぐしゝゕュユャぎョすビやフヸかむエシだっはちえょにザヨけたのダバンゆゼゴねテるゲペづメドィわブヶぺらゐヒワとッぅァヅきでジツヮぜほヴびキげー・ぃろガお゠オヷうこぉもゎべヵゃ" 
     + "一二三四五六七八九十" // 1 2 3 4 5 6 7 8 9 10  
     + "1234567890"; 
 
-function ChineseCharNumberCharGetChar(length) {
+function ChineseCharChineseNumberAndNumberGetChar(length) {
     let result = "";
     for (let i = 0; i < length; i++) {
-      result += ChineseCharNumberChar[Math.floor(Math.random() * ChineseCharNumberChar.length)];
+      result += ChineseCharChineseNumberAndNumberChar[Math.floor(Math.random() * ChineseCharChineseNumberAndNumberChar.length)];
     }
     return result;
 }
 
-function GenerateChineseChar() {
-    document.getElementById("chinesechartext").innerHTML = ChineseCharGetChar(16);
+function GenerateChineseChineseNumberAndNumberChar() {
+    document.getElementById("chinesegetnumberchar").innerHTML = ChineseCharGetChar(16);
   }
 
-  function CopyChineseChar() {
-    const headingText = document.getElementById("chinesechartext").textContent;
+  function CopyChineseChineseNumberAndNumberChar() {
+    const headingText = document.getElementById("chinesegetnumberchar").textContent;
     const tempInput = document.createElement("input");
     tempInput.value = headingText;
     document.body.appendChild(tempInput);
@@ -249,6 +249,14 @@ function GenerateChineseChar() {
         <br><br>
         <button onclick="GenerateChineseCharNormalChar()">Generate Chinese Characters</button>
         <button onclick="CopyChineseCharNormalChar()">Copy Chinese Characters</button>
+        <br><br>
+    <hr>
+        <br><br>
+        <h1>Chinese Characters And Numbers Only</h1>
+        <p class="text_generator_fim" id="chinesegetnumberchar">hello</p>
+        <br><br>
+        <button onclick="GenerateChineseChineseNumberAndNumberChar()">Generate Chinese Characters</button>
+        <button onclick="CopyChineseChineseNumberAndNumberChar()">Copy Chinese Characters</button>
         <br><br>
     <hr>
 </body>
