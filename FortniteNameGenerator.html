@@ -184,12 +184,12 @@ function ChineseCharChineseNumberAndNumberGetChar(length) {
     return result;
 }
 
-function GenerateChineseChineseNumberAndNumberChar() {
-    document.getElementById("chinesegetnumberchar").innerHTML = ChineseCharGetChar(16);
+function genNumberChin() {
+    document.getElementById("chintextherenumber").innerHTML = ChineseCharChineseNumberAndNumberGetChar(16);
   }
 
-  function CopyChineseChineseNumberAndNumberChar() {
-    const headingText = document.getElementById("chinesegetnumberchar").textContent;
+  function copyNumberChin() {
+    const headingText = document.getElementById("chintextherenumber").textContent;
     const tempInput = document.createElement("input");
     tempInput.value = headingText;
     document.body.appendChild(tempInput);
@@ -272,10 +272,10 @@ function GenerateChineseChineseNumberAndNumberChar() {
     <hr>
         <br><br>
         <h1>Chinese Characters And Numbers Only</h1>
-        <p class="text_generator_fim" id="chinesegetnumberchar">hello</p>
+        <p class="text_generator_fim" id="chintextherenumber">hello</p>
         <br><br>
-        <button onclick="GenerateChineseChineseNumberAndNumberChar()">Generate Chinese Characters</button>
-        <button onclick="CopyChineseChineseNumberAndNumberChar()">Copy Chinese Characters</button>
+        <button onclick="genNumberChin()">Generate Chinese Characters</button>
+        <button onclick="copyNumberChin()">Copy Chinese Characters</button>
         <br><br>
     <hr>
 </body>
